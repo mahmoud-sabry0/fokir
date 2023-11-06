@@ -165,12 +165,11 @@ body {
   margin-top: -481px;
   margin-left: 500px;
   float: left;
-font-size: 34px;
-
+  font-size: 34px;
 }
-#about .picture .hello h1 span{
+#about .picture .hello h1 span {
   color: red;
-   padding-right: 5px;
+  padding-right: 5px;
 }
 .bottom-content {
   margin-left: 450px;
@@ -186,9 +185,7 @@ font-size: 34px;
   padding: 15px 24px;
   border-radius: 5px;
 }
- .picture .bordar .sst .about-image-overlay {
-
-  
+.picture .bordar .sst .about-image-overlay {
   /* position: absolute; */
   /* top: 100%; */
   /* left: 0;
@@ -202,27 +199,31 @@ font-size: 34px;
   transition: top 0.5s;
   overflow: hidden; */
 }
-.mfa .overlay:hover{
-  
-  /* position: absolute; */
-  top: 100%;
-  left: 0;
-  margin: auto;
-  bottom: 4px;
-  background-color: rgba(0, 0, 0, 0.57);
-  width: 100%;
-  text-align: center;
-  border-radius: 5px;
-  transition: top 0.5s;
+
+
+.mfa {
+  position: relative;
+  width: 300px;
+  height: 400px;
   overflow: hidden;
 }
-.mfa .ahn{
-  width: ;
-  margin: 50%;
-animation: calc(.overlay 5s);
-overflow:hidden;
-position:absolute ;
-top:100%;
-left:0;
+
+.mfa .ahn {
+  width: 100%;
+  height: 100%;
 }
 
+.mfa .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+opacity: 0;
+  background-color: rgba(0, 0, 0, 0.57);
+  transition: all 0.5s ease-in-out;
+}
+
+.mfa:hover .overlay{
+  opacity: 1;
+}
